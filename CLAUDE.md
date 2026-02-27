@@ -27,7 +27,9 @@ llm-benchmark/
 ├── .env.example           # Template for configuration (copy to .env)
 ├── .gitignore             # Git ignore rules
 ├── docs/
-│   └── README.vi.md       # Vietnamese documentation
+│   ├── README.vi.md       # Vietnamese documentation
+│   └── assets/
+│       └── output-example.png  # Example output screenshot
 └── reports/               # (ignored by git) Generated JSON reports
 ```
 

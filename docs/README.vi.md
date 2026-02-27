@@ -90,6 +90,20 @@ python test_model.py --compare "model-a" "model-b" --all
 
 ---
 
+## Ví Dụ Đầu Ra
+
+Đây là hình ảnh kết quả kiểm tra:
+
+![Ví Dụ Đầu Ra](../docs/assets/output-example.png)
+
+Báo cáo hiển thị:
+- **Phân tích điểm** theo danh mục và mức độ khó
+- **Thanh tiến độ trực quan** để đánh giá nhanh
+- **Điểm có trọng số** với độ chính xác phần trăm
+- **Kết quả cụ thể ngôn ngữ** (Tiếng Anh vs Tiếng Việt)
+
+---
+
 ## Cấu Hình
 
 Đặt các biến môi trường để tùy chỉnh điểm cuối API và mô hình:

@@ -90,6 +90,20 @@ python test_model.py --compare "model-a" "model-b" --all
 
 ---
 
+## Example Output
+
+Here's what the test results look like:
+
+![Output Example](docs/assets/output-example.png)
+
+The report shows:
+- **Score breakdown** by category and difficulty level
+- **Visual progress bars** for quick assessment
+- **Weighted scores** with percentage accuracy
+- **Language-specific results** (English vs Vietnamese)
+
+---
+
 ## Configuration
 
 Set environment variables to customize API endpoint and models:
