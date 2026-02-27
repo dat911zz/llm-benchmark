@@ -1,4 +1,4 @@
-🌐 [English](README.md) | [Tiếng Việt](README.vi.md)
+🌐 [English](README.md) | [Tiếng Việt](docs/README.vi.md)
 
 ---
 
