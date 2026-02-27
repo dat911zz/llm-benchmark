@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**LM Studio Model Intelligence Test Suite v2.0**
+**LLM Intelligence Test Suite v2.0**
 
 A comprehensive LLM evaluation benchmark tool for assessing language model capabilities across multiple dimensions (logic, math, coding, knowledge, critical thinking, language fluency, common sense).
 
