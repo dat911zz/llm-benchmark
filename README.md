@@ -41,51 +41,51 @@ A comprehensive LLM evaluation benchmark inspired by industry-standard tests (MM
 ```bash
 git clone https://github.com/yourusername/llm-benchmark.git
 cd llm-benchmark
-python test_model.py --help
+python main.py --help
 ```
 
 ---
 
 ## Quick Start
 
-### Interactive mode (ask questions one by one)
+### Interactive menu (guided step-by-step)
 ```bash
-python test_model.py
+python main.py
 ```
 
 ### Run all questions against a specific model
 ```bash
-python test_model.py "your-model-id" --all -s
+python main.py "your-model-id" --all -s
 ```
 
 ### Run all questions with detailed output
 ```bash
-python test_model.py "your-model-id" --all -v
+python main.py "your-model-id" --all -v
 ```
 
 ### Run quick version (1 question per difficulty tier)
 ```bash
-python test_model.py "your-model-id" --quick
+python main.py "your-model-id" --quick
 ```
 
 ### Test only Math category
 ```bash
-python test_model.py "your-model-id" --cat Math
+python main.py "your-model-id" --cat Math
 ```
 
 ### Test only Vietnamese questions
 ```bash
-python test_model.py "your-model-id" --lang vi
+python main.py "your-model-id" --lang vi
 ```
 
 ### Enable LLM-as-Judge scoring (use a second model to rate responses)
 ```bash
-python test_model.py "your-model-id" --all --judge "judge-model-id"
+python main.py "your-model-id" --all --judge "judge-model-id"
 ```
 
 ### Compare two models
 ```bash
-python test_model.py --compare "model-a" "model-b" --all
+python main.py --compare "model-a" "model-b" --all
 ```
 
 ---
@@ -118,7 +118,7 @@ export REPORT_DIR="reports"                                # Folder to save JSON
 
 Or override on the command line:
 ```bash
-python test_model.py --api-key sk-xxx --api-url http://... --timeout 300 "model-id" --all
+python main.py --api-key sk-xxx --base-url http://... "model-id" --all
 ```
 
 ---
@@ -199,7 +199,7 @@ Each run generates a JSON report in the `reports/` directory:
 2. Start LM Studio local server (default: `http://localhost:1234/v1`)
 3. Run:
    ```bash
-   python test_model.py "your-local-model" --all -s
+   python main.py "your-local-model" --all -s
    ```
 
 ---

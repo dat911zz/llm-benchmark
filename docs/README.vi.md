@@ -41,7 +41,7 @@ Một bộ tiêu chuẩn đánh giá LLM toàn diện, lấy cảm hứng từ c
 ```bash
 git clone https://github.com/yourusername/llm-benchmark.git
 cd llm-benchmark
-python test_model.py --help
+python main.py --help
 ```
 
 ---
@@ -50,42 +50,42 @@ python test_model.py --help
 
 ### Chế độ tương tác (hỏi từng câu hỏi)
 ```bash
-python test_model.py
+python main.py
 ```
 
 ### Chạy tất cả câu hỏi với mô hình cụ thể
 ```bash
-python test_model.py "your-model-id" --all -s
+python main.py "your-model-id" --all -s
 ```
 
 ### Chạy tất cả câu hỏi với đầu ra chi tiết
 ```bash
-python test_model.py "your-model-id" --all -v
+python main.py "your-model-id" --all -v
 ```
 
 ### Chạy phiên bản nhanh (1 câu hỏi mỗi mức độ khó)
 ```bash
-python test_model.py "your-model-id" --quick
+python main.py "your-model-id" --quick
 ```
 
 ### Kiểm tra chỉ danh mục Toán học
 ```bash
-python test_model.py "your-model-id" --cat Math
+python main.py "your-model-id" --cat Math
 ```
 
 ### Kiểm tra chỉ câu hỏi Tiếng Việt
 ```bash
-python test_model.py "your-model-id" --lang vi
+python main.py "your-model-id" --lang vi
 ```
 
 ### Bật đánh giá LLM-as-Judge (sử dụng mô hình thứ hai để đánh giá phản hồi)
 ```bash
-python test_model.py "your-model-id" --all --judge "judge-model-id"
+python main.py "your-model-id" --all --judge "judge-model-id"
 ```
 
 ### So sánh hai mô hình
 ```bash
-python test_model.py --compare "model-a" "model-b" --all
+python main.py --compare "model-a" "model-b" --all
 ```
 
 ---
@@ -118,7 +118,7 @@ export REPORT_DIR="reports"                                # Thư mục để l�
 
 Hoặc ghi đè trên dòng lệnh:
 ```bash
-python test_model.py --api-key sk-xxx --api-url http://... --timeout 300 "model-id" --all
+python main.py --api-key sk-xxx --api-url http://... --timeout 300 "model-id" --all
 ```
 
 ---
@@ -199,7 +199,7 @@ Mỗi lần chạy tạo báo cáo JSON trong thư mục `reports/`:
 2. Bắt đầu máy chủ cục bộ LM Studio (mặc định: `http://localhost:1234/v1`)
 3. Chạy:
    ```bash
-   python test_model.py "your-local-model" --all -s
+   python main.py "your-local-model" --all -s
    ```
 
 ---
